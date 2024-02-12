@@ -1,6 +1,8 @@
 #!/bin/bash
 
-for i in 1 2 3 4 5
+DATAVAL=`ls | wc -l`
+
+for i in 1 2 3 4 5 $DATAVAL
 do
     echo "Looping ... number $i"
 done
